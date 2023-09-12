@@ -713,6 +713,10 @@ input {
 
 /* hw05 start */
 
+.modal-form-label-wrapper {
+  margin-bottom: 8px;
+}
+
 .modal-caption {
   color: var(--main-cl);
   text-align: center;
@@ -735,7 +739,6 @@ input {
 
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-form-input {
