@@ -795,6 +795,7 @@ input {
   line-height: 1.17;
   letter-spacing: var(--header-lt-space);
   border-radius: 4px;
+  outline: transparent;
   color: var(--navyblue-modal-bg-cl);
   border: 1px solid var(--navyblue-modal-bg-cl);
   background-color: transparent;
@@ -833,7 +834,7 @@ input {
   margin-right: 8px;
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal-bg-cl);
-  transition: background-color var(--trns-fast), border var(--trns-fast);
+  transition: background-color var(--trns-fast), border var(--trns-fast), fill var(--trns-fast);
   cursor: pointer;
 }
 
