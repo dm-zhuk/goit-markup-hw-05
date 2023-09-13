@@ -408,11 +408,10 @@
 
       <form class="modal-form" name="feedback">
         <div class="modal-form-label-wrapper">
-
           <label class="modal-form-label" for="user-name">Name</label>
-
           <div class="modal-form-field">
-            <input class="modal-form-input" id="user-name" name="user-name" type="text" required minlength="3" />
+            <input class="modal-form-input" id="user-name" required name="user-name" type="text" required
+              minlength="3" />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
@@ -420,10 +419,9 @@
         </div>
 
         <div class="modal-form-label-wrapper">
-
           <label class="modal-form-label" for="user-phone">Phone</label>
           <div class="modal-form-field">
-            <input class="modal-form-input" id="user-phone" name="user-phone" type="tel" minlength="12"
+            <input class="modal-form-input" id="user-phone" required name="user-phone" type="tel" minlength="12"
               maxlength="12" />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -432,10 +430,9 @@
         </div>
 
         <div class="modal-form-label-wrapper">
-
           <label class="modal-form-label" for="user-email">Email</label>
           <div class="modal-form-field">
-            <input class="modal-form-input" id="user-email" name="user-email" type="email" required />
+            <input class="modal-form-input" id="user-email" required name="user-email" type="email" required />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -450,8 +447,8 @@
 
         <div class="checkbox-form-wrapper">
 
+          <input class="visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true" />
           <label class="acception-line" for="user-privacy">
-            <input class="visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true" />
             <span class="modal-form-checkbox">
               <svg class="modal-form-checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-vector"></use>
@@ -464,6 +461,7 @@
               </a>
             </span>
           </label>
+
         </div>
 
         <button class="button modal-form-btn" type="submit">Send</button>

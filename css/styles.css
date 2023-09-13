@@ -871,7 +871,6 @@ input[type='checkbox']:checked+.modal-form-checkbox>.modal-form-checkbox-icon {
   font-weight: var(--default-fw);
   line-height: var(--default-lh);
   letter-spacing: 0.03em;
-  user-select: none;
 }
 
 .modal-form-acception-link {
