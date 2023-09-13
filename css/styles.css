@@ -765,24 +765,6 @@ input {
   pointer-events: none;
 }
 
-/* Placeholder styles */
-.modal-form-input::placeholder {
-  opacity: 0;
-  transition: opacity var(--trns-fast);
-}
-
-.modal-form-input:focus::placeholder {
-  opacity: 1;
-}
-
-.modal-form-input:focus+.modal-form-icon {
-  fill: var(--primary-cl);
-}
-
-.modal-form-input:not(:placeholder-shown):required:invalid~.error-message {
-  opacity: 1;
-}
-
 .comment-form-label-wrapper {
   margin-bottom: 16px;
 }
@@ -803,14 +785,33 @@ input {
   transition: border-color var(--trns-fast);
 }
 
+/* Placeholder styles */
+.modal-form-input::placeholder {
+  opacity: 0;
+  transition: opacity var(--trns-fast);
+}
+
+.modal-form-input:focus::placeholder {
+  opacity: 1;
+}
+
+.modal-form-input:focus+.modal-form-icon {
+  fill: var(--primary-cl);
+}
+
+.modal-form-input:not(:placeholder-shown):required:invalid~.error-message {
+  opacity: 1;
+}
+
 .modal-form-comment:focus {
   border-color: var(--primary-cl);
-  fill: var(--primary-cl);
 }
 
 .modal-form-comment::placeholder {
   color: var(--navyblue-modal-bg-cl);
 }
+
+/* Checkbox */
 
 .checkbox-form-wrapper {
   margin-bottom: 24px;
@@ -848,7 +849,7 @@ input[type='checkbox']:checked+.modal-form-checkbox {
 
 /* Focus state */
 input[type='checkbox']:focus-visible+.modal-form-checkbox {
-  fill: var(--pressed-bg-cl);
+  fill: var(--light-cl);
   border-color: var(--pressed-bg-cl);
 }
 
