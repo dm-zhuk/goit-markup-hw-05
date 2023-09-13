@@ -799,10 +799,6 @@ input {
   fill: var(--primary-cl);
 }
 
-.modal-form-input:not(:placeholder-shown):required:invalid~.error-message {
-  opacity: 1;
-}
-
 .modal-form-comment:focus {
   border-color: var(--primary-cl);
 }
@@ -812,7 +808,6 @@ input {
 }
 
 /* Checkbox */
-
 .checkbox-form-wrapper {
   margin-bottom: 24px;
 }
@@ -839,7 +834,20 @@ input {
   cursor: pointer;
 }
 
-/* Checked box */
+.modal-form-acception-line {
+  color: var(--subtle-bg-cl);
+  font-size: 12px;
+  font-style: var(--default-fs);
+  font-weight: var(--default-fw);
+  line-height: var(--default-lh);
+  letter-spacing: 0.03em;
+}
+
+.modal-form-acception-link {
+  color: var(--primary-cl);
+}
+
+/* Checked box + Focused */
 
 input[type='checkbox']:checked+.modal-form-checkbox {
   background-color: var(--pressed-bg-cl);
@@ -847,7 +855,6 @@ input[type='checkbox']:checked+.modal-form-checkbox {
   fill: var(--light-cl);
 }
 
-/* Focus state */
 input[type='checkbox']:focus-visible+.modal-form-checkbox {
   fill: var(--light-cl);
   border-color: var(--pressed-bg-cl);
@@ -862,19 +869,6 @@ input[type='checkbox']:focus-visible+.modal-form-checkbox {
 
 input[type='checkbox']:checked+.modal-form-checkbox>.modal-form-checkbox-icon {
   opacity: 1;
-}
-
-.modal-form-acception-line {
-  color: var(--subtle-bg-cl);
-  font-size: 12px;
-  font-style: var(--default-fs);
-  font-weight: var(--default-fw);
-  line-height: var(--default-lh);
-  letter-spacing: 0.03em;
-}
-
-.modal-form-acception-link {
-  color: var(--primary-cl);
 }
 
 /* hw05 end */
