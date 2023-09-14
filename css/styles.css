@@ -849,7 +849,7 @@ input {
 
 /* Checked box + Focused */
 
-input[type='checkbox']:checked+.modal-form-checkbox {
+input[type='checkbox']:checked+.acception-line .modal-form-checkbox {
   background-color: var(--pressed-bg-cl);
   border: none;
   fill: var(--light-cl);
@@ -858,13 +858,6 @@ input[type='checkbox']:checked+.modal-form-checkbox {
 input[type='checkbox']:focus-visible+.modal-form-checkbox {
   fill: var(--light-cl);
   border-color: var(--pressed-bg-cl);
-}
-
-.modal-form-checkbox-icon {
-  border: 1px;
-  border-color: var(--navyblue-modal-bg-cl);
-  opacity: 0;
-  transition: opacity var(--trns-fast);
 }
 
 input[type='checkbox']:checked+.modal-form-checkbox>.modal-form-checkbox-icon {
