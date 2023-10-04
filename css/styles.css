@@ -510,7 +510,6 @@ input {
 .footer {
   background-color: var(--hero-bg-cl);
   padding: 100px 0;
-  min-width: 1440px;
   margin: 0 auto;
 }
 
@@ -630,7 +629,6 @@ input {
   height: 40px;
   letter-spacing: var(--header-lt-space);
   padding: 8px 24px;
-  gap: 16px;
   border: none;
   border-radius: 4px;
   background: var(--IRIS, #4D5AE5);
@@ -842,8 +840,16 @@ input {
 
 input[type='checkbox']:checked+.acception-line .modal-form-checkbox {
   background-color: var(--pressed-bg-cl);
-  border: none;
+  border-color: var(--pressed-bg-cl);
   fill: var(--light-cl);
+}
+
+input[type='checkbox']:focus-visible+.acception-line .modal-form-checkbox {
+  border-color: var(--pressed-bg-cl);
+}
+
+.modal-form-checkbox:hover {
+  border-color: var(--pressed-bg-cl);
 }
 
 /**
@@ -951,3 +957,15 @@ input[type='checkbox']:checked+.acception-line .modal-form-checkbox {
   | conspects temp input
   |============================
 **/
+
+/* @media screen and (min-width: 1158px) {
+  body {
+    background-color: lightskyblue;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  body {
+    background-color: ;
+  }
+} */
