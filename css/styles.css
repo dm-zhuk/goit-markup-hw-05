@@ -840,7 +840,7 @@ input {
 
 input[type='checkbox']:checked+.acception-line .modal-form-checkbox {
   background-color: var(--pressed-bg-cl);
-  border-color: var(--pressed-bg-cl);
+  border: none;
   fill: var(--light-cl);
 }
 
